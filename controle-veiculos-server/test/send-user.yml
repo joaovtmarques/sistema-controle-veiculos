@@ -1,0 +1,15 @@
+config:
+  target: 'http://localhost:8000'
+  phases:
+    - duration: 10
+      arrivalRate: 40
+scenarios:
+  - flow:
+      - post:
+          url: '/users'
+          json:
+            name: 'Teste Nome Completo'
+            warName: 'Teste Nome de Guerrra'
+            rank: 'SD EP'
+            phoneNumber: '12000000000'
+            SU: '6ºBIL'
